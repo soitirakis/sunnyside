@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&display=swap');
+:root {
+  --color: hsl(7,99%,70%);
+  --color1: hsl(51, 100%, 49%);
+  --graphicTextColor: hsl(167,40%,24%);
+  --photographyColor: hsl(198,62%,26%);
+  --footerColor: hsl(168,34%,41%);
+
+  --color2: hsl(212,27%,19%);
+  --color3: hsl(213, 9%, 39%);
+  --color4: hsl(232,10%,55%);
+  --color5: hsl(210,4%,67%);
+  --color6: hsl(0,0%,100%);
+}
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+}
+.container-display {
+    padding: 1.5rem;
+}
+
+/*header*/
+.page-main-header {
+  background-image: url('../img/image-header.jpg');
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-main-title {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .3rem;
+  line-height: 1.5;
+  color: var(--color6);
+  font-weight: 900;
+  padding-top: 1.5rem;
+}
+.icon-arrow-down {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/*card*/
+.card {
+  padding: 2.5rem 1.5rem;
+}
+.card-title {
+  color: var(--color2);
+  text-align: center;
+}
+.card-description {
+  color: var(--color4);
+  text-align: justify;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+.card-link {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 1.5rem;
+
+}
+.orange {
+  text-decoration: underline solid var(--color1) 50%;
+}
+.pink {
+  text-decoration: underline solid var(--color) 50%;
+}
+
+.card-title, .card-link {
+  color: var(--color2);
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.image {
+  /*max-width: 375px;*/
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.section-card-design{
+  position: relative;
+}
+.section-card {
+  position: absolute;
+  top: 50%;
+}
+.card-design-title, .card-design-description {
+  color: var(--graphicTextColor);
+}
+.card-photography-title, .card-photography-description {
+  color: var(--photographyColor);
+}
+.card-title-extra {
+  text-transform: capitalize;
+}
+.card-description-extra {
+  line-height: 1.5;
+  letter-spacing: .5px;
+  text-align: center;
+}
+/*testimonials*/
+.card-clients-testimonials {
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+.card-clients-testimonials-title {
+  text-transform: uppercase;
+  color: var(--color4);
+
+}
+.card-clients {
+  padding: 1.5rem 0;
+}
+.card-clients-image {
+  border-radius: 50%;
+  width: 25%;
+  height: auto;
+}
+.card-clients-description {
+  color: var(--color3);
+  line-height: 1.5;
+}
+.card-clients-name {
+  margin-bottom: 0;
+}
+.card-clients-job {
+  margin-top: 0;
+  padding-top: .5rem;
+  color: var(--color5);
+  font-size: .8rem;
+}
+/*image gallery*/
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.image-gallery-the-picture{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*footer*/
+.footer {
+  background: var(--footerColor);
+}
+.footer-logo {
+  display: block;
+  margin: auto;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.svg-image {
+  fill: #000;
+}
+.footer-navbar, .footer-social-media-logos {
+  display: flex;
+  padding: 2rem;
+}
+.footer-navbar{
+  justify-content: space-between;
+}
+.footer-social-media-logos {
+  justify-content: space-evenly;
+}
+.footer-nav-link {
+  text-decoration: none;
+  color: var(--graphicTextColor);
+}
+.footer-nav-link:hover {
+  color: var(--color6);
+}
+.footer-social-media {
+  color: var(--graphicTextColor);
+  font-size: 1.5rem;
+}
+.footer-social-media:hover {
+  color: var(--color6);
+}
+
+/*media responsive*/
+@media screen and (min-width: 375px) {
+  .item-a {
+    grid-area: image-transform;
+  }
+  .item-b {
+    grid-area: transform-description;
+  }
+  .item-c {
+    grid-area: image-stand-out;
+  }
+  .item-d {
+    grid-area:  stand-out-description;
+  }
+  .item-e {
+    grid-area: image-graphic-design;
+  }
+  .item-f {
+    grid-area: image-photography;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "transform-description image-transform"
+    "image-stand-out stand-out-description"
+    "image-graphic-design image-photography"
+  }
+  .card {
+    position: relative;
+  }
+  /*.card-content {
+    position: absolute;
+    margin:auto;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }*/
+  .card-clients-testimonials {
+    display: flex;
+  }
+  .card-clients-testimonials-title {
+    text-align: center;
+  }
+  .gallery {
+    display: flex;
+  }
+  .footer-navbar, .footer-social-media-logos {
+    width: 25%;
+    margin: auto;
+  }
+}
