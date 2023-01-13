@@ -90,8 +90,9 @@ html, body {
 .image {
   /*max-width: 375px;*/
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
 }
 .section-card-design{
   position: relative;
@@ -195,7 +196,7 @@ html, body {
 }
 
 /*media responsive*/
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 375px) {
   .item-a {
     grid-area: image-transform;
   }
@@ -217,7 +218,7 @@ html, body {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
     "transform-description image-transform"
     "image-stand-out stand-out-description"
@@ -226,13 +227,6 @@ html, body {
   .card {
     position: relative;
   }
-  /*.card-content {
-    position: absolute;
-    margin:auto;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-  }*/
   .card-clients-testimonials {
     display: flex;
   }
