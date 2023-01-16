@@ -196,7 +196,7 @@ html, body {
 }
 
 /*media responsive*/
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 575px) {
   .item-a {
     grid-area: image-transform;
   }
