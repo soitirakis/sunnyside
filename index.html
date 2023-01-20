@@ -10,34 +10,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <header class="page-main-header container-display">
+    <header id="page-logo" class="page-main-header container-display">
       <div class="header-container">
         <div class="navbar">
-          <img class="page-logo-image" src="img/logo.svg" alt="The SunnySide logo image">
+          <img  class="page-logo-image" src="img/logo.svg" alt="The SunnySide logo image">
           <img class="page-menu-hamburger" src="img/icon-hamburger.svg" alt="Hamburger icon for the menu" id="nav-menu">
+          <div class="modal" id="myModal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <nav class="navbar">
+                <ul class="nav">
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#testimonials">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
         <h1 class="page-main-title">we are creatives</h1>
         <img class="icon-arrow-down" src="img/icon-arrow-down.svg" alt="White arrow pointing down to the orange">
-        <div class="modal" id="myModal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <nav class="navbar">
-              <ul class="nav">
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+
       </div>
     </header>
     <main class="container">
-      <section class="card-image item-a">
+      <section id="about" class="card-image item-a">
         <picture>
           <source media="(min-width: 575px)" srcset="img/image-transform-desktop.jpg">
-          <img class="image" src="img/image-transform.jpg" alt="" width="373px" height="310px">
+          <img class="image" src="img/image-transform.jpg" alt="One egg on a yellow background" width="373px" height="310px">
         </picture>
       </section>
       <section class="card container-display item-b">
@@ -52,7 +53,7 @@
       <section class="card-image item-c">
         <picture>
           <source media="(min-width: 575px)" srrset="img/image-stand-out-desktop.jpg">
-          <img class="image" src="img/image-stand-out.jpg" alt="" width="373px" height="310px">
+          <img class="image" src="img/image-stand-out.jpg" alt="Pink wine glass on a pink background" width="373px" height="310px">
         </picture>
       </section>
       <section class="card container-display item-d">
@@ -62,10 +63,10 @@
       places.</p>
       <a class="card-link pink" href="#">learn more</a>
       </section>
-      <section class="card-image card-graphic-design section-card-design item-e">
+      <section id="services" class="card-image card-graphic-design section-card-design item-e">
         <picture>
           <source media="(min-width: 375px)" srcset="img/image-graphic-design-desktop.jpg">
-          <img class="image" src="img/image-graphic-design.jpg" alt="" width="373px" height="310px">
+          <img class="image" src="img/image-graphic-design.jpg" alt="Two beautiful cherries" width="373px" height="310px">
         </picture>
         <div class="container-display section-card">
           <h2 class="card-design-title card-title card-title-extra">graphic design</h2>
@@ -76,7 +77,7 @@
       <section class="card-image card-photography section-card-design item-f">
         <picture>
           <source media="(min-width: 375px)" srcset="img/image-photography-desktop.jpg">
-          <img class="image" src="img/image-photography.jpg" alt="" width="373px" height="310px">
+          <img class="image" src="img/image-photography.jpg" alt="One orange with a green leaf on right side" width="373px" height="310px">
         </picture>
         <div class="container-display section-card">
           <h2 class="card-photography-title card-title card-title-extra">photography</h2>
@@ -85,7 +86,7 @@
         </div>
       </section>
     </main>
-    <aside class="container-display">
+    <aside class="container-display" id="testimonials">
       <h3 class="card-clients-testimonials-title">client testimonials</h3>
       <div class="card-clients-testimonials">
         <section class="card-clients">
@@ -137,18 +138,19 @@
         </picture>
       </div>
     </div>
-    <footer class="footer">
-      <img class="footer-logo" src="img/logo.svg" alt="">
+    <footer id="contact" class="footer">
+      <a href="#page-logo"><img class="footer-logo" src="img/logo.svg" alt=""></a>
       <nav class="footer-navbar">
-          <a class="footer-nav-link" href="#">About</a>
-          <a class="footer-nav-link" href="#">Services</a>
-          <a class="footer-nav-link" href="#">Projects</a>
+          <a class="footer-nav-link" href="#about">About</a>
+          <a class="footer-nav-link" href="#services">Services</a>
+          <a class="footer-nav-link" href="#testimonials">Projects</a>
       </nav>
       <div class="footer-social-media-logos">
-        <a class="footer-social-media" href="#"><i class="fa fa-facebook-square"></i></a>
-        <a class="footer-social-media" href="#"><i class="fa fa-instagram"></i></a>
-        <a class="footer-social-media" href="#"><i class="fa fa-twitter"></i></a>
-        <a class="footer-social-media" href="#"><i class="fa fa-pinterest"></i></a>
+        <a class="footer-social-media" href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+        <a class="footer-social-media" href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a class="footer-social-media" href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a class="footer-social-media" href="https://pinterest.com" target="
+        "><i class="fa fa-pinterest"></i></a>
       </div>
     </footer>
     <script src="js/main.js"></script>
