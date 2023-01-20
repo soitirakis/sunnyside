@@ -37,6 +37,7 @@ html, body {
   position: fixed;
   right: 0;
   padding-right: 1.5rem;
+  z-index: 1;
 }
 .navbar {
   display: flex;
