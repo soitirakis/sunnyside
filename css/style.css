@@ -315,6 +315,7 @@ nav .navbar {
     background: none;
     border-radius: 0;
     border: none;
+    box-shadow: none;
   }
   .close {
     display: none;
