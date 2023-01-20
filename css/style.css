@@ -90,7 +90,8 @@ html, body {
   padding: 1.25rem;
   width: 80%;
   border-radius: 1rem;
-
+  border:1px solid var(--color5);
+  box-shadow: 3px 3px var(--color3);
   /*for full screeen myModal
   width: 100%;
   height: 100vh;
