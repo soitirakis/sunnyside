@@ -201,6 +201,7 @@ nav .navbar {
 .card-clients-testimonials-title {
   text-transform: uppercase;
   color: var(--color4);
+  text-align: center;
 
 }
 .card-clients {
@@ -230,10 +231,20 @@ nav .navbar {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+.image-gallery {
+  width: 100%;
+}
 .image-gallery-the-picture{
   display: block;
   max-width: 100%;
   height: auto;
+}
+.image-gallery-the-picture:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: ease .5s;
+  box-shadow: 8px 8px var(--color3);
+  border-radius: 1rem;
 }
 /*footer*/
 .footer {
