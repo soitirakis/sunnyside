@@ -28,9 +28,7 @@ Users should be able to:
 
 <<<<<<< HEAD
 ![Design preview for sunnySide](./img/Screenshot.jpg)
-=======
-![Design preview for social-proof-section](./img/sunnyside.jpg)
->>>>>>> 0dfe360eaacbb43810766bf50085124f4cbca37a
+
 
 
 ### Links
