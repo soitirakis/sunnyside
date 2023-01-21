@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Design preview for social-proof-section](./img/Screenshot.jpg)
+![Design preview for social-proof-section](./img/sunnyside.jpg)
 
 
 ### Links
